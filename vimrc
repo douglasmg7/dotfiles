@@ -19,6 +19,10 @@ Plugin 'tpope/vim-surround'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-commentary.git' " simple comment/uncomment plugin
+"Plugin 'vim-airline/vim-airline'
+Plugin 'notpratheek/vim-luna'
+Plugin 'morhetz/gruvbox' " colorscheme
+Plugin 'mhartington/oceanic-next' "colorscheme
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -28,6 +32,8 @@ set t_Co=256
 syntax on
 colorscheme ir_black
 set background=dark		"light
+
+"set laststatus=2		"make airline work
 
 set guioptions-=m		"remove menu bar
 set guioptions-=T		"remove toolbar
