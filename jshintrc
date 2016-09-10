@@ -1,10 +1,14 @@
 {
 	"node": true,
 	"esversion": 6,
+	"devel": true,
 	"globals": {
 		"console": false,
 		"use strict": false,
 		"$": false,
-		"jQuery": false
+		"jQuery": false,
+		"window": false,
+		"Backbone": true,
+		"template_1": true
 	}
 }

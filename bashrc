@@ -112,8 +112,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export NVM_DIR="/home/douglasmg7/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# export NVM_DIR="/home/douglasmg7/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # to use node
 PATH=$PATH:/home/douglasmg7/node-v4.4.1-linux-x64/bin
