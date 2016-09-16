@@ -1,3 +1,6 @@
+// 0 - off
+// 1 - warn
+// 3 - error
 {
     "env": {
         "browser": true,
@@ -11,19 +14,20 @@
     "extends": "eslint:recommended",
     "rules": {
         "indent": [
-            "error",
+            2,
             2
         ],
         "linebreak-style": [
-            "error",
+            2,
             "unix"
         ],
         "quotes": [
-            "error",
-            "single"
+            0,
+            "single",
+			"avoid-escape"
         ],
         "semi": [
-            "error",
+            2,
             "always"
         ],
 		"no-console": 0
