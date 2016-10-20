@@ -116,4 +116,6 @@ fi
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # to use node
-PATH=$PATH:/home/douglasmg7/node-v4.4.1-linux-x64/bin
+# PATH=$PATH:/home/douglasmg7/node-v4.4.1-linux-x64/bin
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
