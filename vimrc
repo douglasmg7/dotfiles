@@ -17,6 +17,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'twerth/ir_black'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-commentary.git' " simple comment/uncomment plugin
 "Plugin 'vim-airline/vim-airline'
