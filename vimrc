@@ -10,7 +10,8 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'digitaltoad/vim-jade'
-Plugin 'Lokaltog/vim-easymotion'
+" Plugin 'Lokaltog/vim-easymotion'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'moll/vim-node'
 Plugin 'vim-scripts/ScrollColors'
 Plugin 'tpope/vim-fugitive'
@@ -19,9 +20,10 @@ Plugin 'tpope/vim-surround'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'twerth/ir_black'
 Plugin 'tomasr/molokai'
-Plugin 'tpope/vim-commentary.git' " simple comment/uncomment plugin
-"Plugin 'vim-airline/vim-airline'
+Plugin 'scrooloose/nerdcommenter'
+" Plugin 'tpope/vim-commentary.git' " simple comment/uncomment plugin
 Plugin 'notpratheek/vim-luna'
+Plugin 'vim-airline/vim-airline'
 Plugin 'morhetz/gruvbox' " colorscheme
 Plugin 'mhartington/oceanic-next' "colorscheme
 
@@ -109,3 +111,6 @@ iabbrev vc voce
 "example of autocmd
 autocmd FileType javascript iabbrev <buffer>cl console.log(
 autocmd FileType javascript set commentstring=#\ %s
+
+" the nerd commenter
+let g:NERDSpaceDelims = 1
