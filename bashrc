@@ -119,3 +119,9 @@ fi
 # PATH=$PATH:/home/douglasmg7/node-v4.4.1-linux-x64/bin
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+
+# powerline config
+export TERM=xterm-256color
+if [ -f /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh ]; then
+      source /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
+      fi
