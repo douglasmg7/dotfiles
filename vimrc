@@ -80,7 +80,7 @@ set hidden    "  keep the changes to the buffer without writing them to the file
 set autowrite     " set autowriteall
 set autowriteall  " set autowriteall
 
-let mapleader="-"		"define the leader
+let mapleader="\<space>"
 
 " plugins
 " the nerd commenter
