@@ -35,6 +35,8 @@ Plugin 'honza/vim-snippets' " snippets
 call vundle#end()
 filetype plugin on    " required by vundle - end vundle
 
+" set backspace=indent,eol,start
+
 set t_Co=256
 syntax enable
 
@@ -102,6 +104,7 @@ execute pathogen#infect()
 " go to normal mode
 inoremap jk <esc>
 inoremap <esc> <nop>
+
 "diseable arrows
 inoremap <up> <nop>
 inoremap <down> <nop>
@@ -111,6 +114,11 @@ nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
+
+" disable backspace
+inoremap <bs> <nop>
+" disable del
+inoremap <del> <nop>
 
 "move to begin of line
 nnoremap H 0
@@ -128,23 +136,19 @@ nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 
 " buffer next/previous/delete
-nnoremap <c-tab>   :bnext<cr>
-nnoremap <c-s-tab> :bprevious<cr>
-nnoremap <c-d> :bd<cr>
-inoremap <c-tab>   <esc>:bnext<cr>
-inoremap <c-s-tab> <esc>:bprevios<cr>
-inoremap <c-d> <esc>:bd<cr>
+nnoremap gn :bnext<cr>
+nnoremap gp :bprevious<cr>
+nnoremap <C-d> :bd<cr>
 
 "remove line into insert mode
-inoremap <c-d> <esc>ddi
+inoremap <C-d> <esc>ddi
 "upper-case word into insert mode
-inoremap <c-u> <esc>viwUA
-
+inoremap <C-u> <esc>viwua
 
 "example of abbreviation
 iabbrev vc voce
 
 "example of autocmd
-autocmd FileType javascript iabbrev <buffer>cl console.log(
-autocmd FileType javascript set commentstring=#\ %s
+autocmd filetype javascript iabbrev <buffer>cl console.log(
+autocmd filetype javascript set commentstring=#\ %s
 
