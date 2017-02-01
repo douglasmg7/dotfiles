@@ -105,7 +105,7 @@ execute pathogen#infect()
 inoremap jk <esc>
 inoremap <esc> <nop>
 
-"diseable arrows
+" diseable arrows
 inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
@@ -120,19 +120,24 @@ inoremap <bs> <nop>
 " disable del
 inoremap <del> <nop>
 
-"move to begin of line
+" move to begin of line
 nnoremap H 0
-"move to end of line
+" move to end of line
 nnoremap L $
 
-"open .vimrc in to split view
+" page up
+nnoremap <C-f> z+
+" page down
+nnoremap <C-b> z^
+
+" open .vimrc in to split view
 nnoremap <leader>ev :e $MYVIMRC<cr>
-"save and reload .vimrc
+" save and reload .vimrc
 nnoremap <leader>wv :w<cr>:so $MYVIMRC<cr>
 
-"surround the word in double quotes
+" surround the word in double quotes
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
-"surround the word in quotes
+" surround the word in quotes
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 
 " buffer next/previous/delete
@@ -140,15 +145,15 @@ nnoremap gn :bnext<cr>
 nnoremap gp :bprevious<cr>
 nnoremap <C-d> :bd<cr>
 
-"remove line into insert mode
+" remove line into insert mode
 inoremap <C-d> <esc>ddi
-"upper-case word into insert mode
+" upper-case word into insert mode
 inoremap <C-u> <esc>viwua
 
-"example of abbreviation
+" example of abbreviation
 iabbrev vc voce
 
-"example of autocmd
+" example of autocmd
 autocmd filetype javascript iabbrev <buffer>cl console.log(
 autocmd filetype javascript set commentstring=#\ %s
 
