@@ -13,8 +13,6 @@ Plugin 'tpope/vim-fugitive' " git wrapper
 Plugin 'scrooloose/nerdtree' " color scroller, chooser and browser
 Plugin 'tpope/vim-surround' " quoting/parenthesizing made simple
 Plugin 'scrooloose/nerdcommenter' " intensely orgasmic commenting
-Plugin 'vim-airline/vim-airline' " lean & mean status/tabline for vim that's light as air
-Plugin 'vim-airline/vim-airline-themes' " airline themes
 Plugin 'ctrlpvim/ctrlp.vim' " full path fuzzy file, buffer, mru, tag, ... finder
 Plugin 'digitaltoad/vim-pug' " syntax highligth and idention for pug
 Plugin 'posva/vim-vue' " syntax highligth for vue.js components
@@ -30,25 +28,27 @@ Plugin 'altercation/vim-colors-solarized' " colorscheme
 Plugin 'terryma/vim-multiple-cursors' " true sublime text style multiple selections for vim
 Plugin 'sirver/ultisnips' " snippet engine
 Plugin 'honza/vim-snippets' " snippets
+Plugin 'bling/vim-bufferline' " Super simple vim plugin to show the list of buffers in the command bar
 
 " All of your Plugins must be added before the following line
 call vundle#end()
 filetype plugin on    " required by vundle - end vundle
 
+" conif backspace
 " set backspace=indent,eol,start
 
 set t_Co=256
 syntax enable
 
-" set background=dark
-" colorscheme ir_black
-
 set background=dark
-if !has("gui_running")
-  let g:solarized_termtrans=1
-  let g:solarized_termcolors=256
-endif
-colorscheme solarized
+colorscheme ir_black
+
+" set background=dark
+" if !has("gui_running")
+  " let g:solarized_termtrans=1
+  " let g:solarized_termcolors=256
+" endif
+" colorscheme solarized
 
 set guioptions-=m		"remove menu bar
 set guioptions-=T		"remove toolbar
@@ -82,13 +82,13 @@ set autowriteall  " set autowriteall
 
 let mapleader="\<space>"
 
-" plugins
+
 " the nerd commenter
 let g:NERDSpaceDelims=1 " number of space when comment
 " airline
-set laststatus=2  " always show statusline
-let g:airline_powerline_fonts=1  " populate g:airline_symbols dictionary with the powerline symbols
-let g:airline#extensions#tabline#enabled=1  " smart tab line
+" set laststatus=2  " always show statusline
+" let g:airline_powerline_fonts=1  " populate g:airline_symbols dictionary with the powerline symbols
+" let g:airline#extensions#tabline#enabled=1  " smart tab line
 " nerd tree
 nnoremap <f5> :NERDTreeToggle<cr>
 " syntastic
@@ -156,4 +156,5 @@ iabbrev vc voce
 " example of autocmd
 autocmd filetype javascript iabbrev <buffer>cl console.log(
 autocmd filetype javascript set commentstring=#\ %s
+
 

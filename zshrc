@@ -7,12 +7,12 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 # ZSH_THEME="pure"
 # ZSH_THEME="blinks"
 # ZSH_THEME="tjkirch"
 # ZSH_THEME="garyblessington"
-ZSH_THEME="spaceship"
+# ZSH_THEME="spaceship"
 
 # no beep
 setopt NO_BEEP
@@ -68,6 +68,7 @@ source $ZSH/oh-my-zsh.sh
 setxkbmap -option ctrl:nocaps
 # Added by n-install (see http://git.io/n-install-repo).
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  
+export TERM=xterm-256color
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
