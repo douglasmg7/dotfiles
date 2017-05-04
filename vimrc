@@ -8,7 +8,7 @@ Plugin 'gmarik/Vundle.vim'  " let Vundle manage Vundle, required
 Plugin 'kchmck/vim-coffee-script' " syntax, ident, compile and more for coffee-script
 Plugin 'easymotion/vim-easymotion' " vim motions on speed
 Plugin 'moll/vim-node' " node tools
-Plugin 'vim-scripts/ScrollColors' 
+Plugin 'vim-scripts/ScrollColors'
 Plugin 'tpope/vim-fugitive' " git wrapper
 Plugin 'scrooloose/nerdtree' " color scroller, chooser and browser
 Plugin 'tpope/vim-surround' " quoting/parenthesizing made simple
@@ -67,7 +67,7 @@ set numberwidth=3		"line number width
 
 set nowrap				"no wrap
 
-"set lines=33			"window height 
+"set lines=33			"window height
 "set columns=90			"window width - external monitor
 "set columns=77			"window width - laptop
 
@@ -99,8 +99,6 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-execute pathogen#infect()
 
 " go to normal mode
 inoremap jk <esc>
@@ -157,5 +155,3 @@ iabbrev vc voce
 " example of autocmd
 autocmd filetype javascript iabbrev <buffer>cl console.log(
 autocmd filetype javascript set commentstring=#\ %s
-
-
