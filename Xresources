@@ -1,5 +1,5 @@
 XTerm*utf8: 1
-XTerm.termName: xterm-256color
+XTerm.termName: xterm-256color-
 XTerm*font: -*-terminus-medium-*-*-*-16-*-*-*-*-*-iso10646-1
 
 *background: rgb:00/00/00

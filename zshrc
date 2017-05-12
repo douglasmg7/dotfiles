@@ -72,7 +72,7 @@ source $ZSH/oh-my-zsh.sh
 setxkbmap -option ctrl:nocaps
 # Added by n-install (see http://git.io/n-install-repo).
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  
-export TERM=xterm-256color
+# export TERM=xterm-256color
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
