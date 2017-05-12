@@ -1,0 +1,6 @@
+! XTerm.termName: xterm
+! XTerm.vt100.reverseVideo: false
+! XTerm.vt100.font: 8x13
+XTerm*termName: xterm--
+XTerm*reverseVideo: true
+XTerm*font: 8x13

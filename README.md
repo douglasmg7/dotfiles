@@ -22,6 +22,8 @@ ln -s ~/dotfiles/ideavimrc.json .ideavimrc.json
 ln -s ~/dotfiles/jshintrc .jshintrc
 ln -s ~/dotfiles/tmux.conf .tmux.conf
 ln -s ~/dotfiles/vimrc .vimrc
+ln -s ~/dotfiles/xinitrc .xinitrc
+ln -s ~/dotfiles/Xresources .Xresources
 ln -s ~/dotfiles/zshrc .zshrc
 # Map leftctrl to capslook keyboard
 cd /etc/udev/hwdb.d
