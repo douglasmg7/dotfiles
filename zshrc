@@ -2,21 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/douglasmg7/.oh-my-zsh
-
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
-ZSH_THEME="refined"
-# ZSH_THEME="pure"
-# ZSH_THEME="blinks"
-# ZSH_THEME="tjkirch"
-# ZSH_THEME="garyblessington"
-# ZSH_THEME="spaceship"
-# ZSH_THEME="bira"
-# ZSH_THEME="dpoggi"
-# ZSH_THEME="dst"
+# export ZSH=/home/douglasmg7/.oh-my-zsh
 
 # no beep
 setopt NO_BEEP
@@ -63,15 +49,18 @@ setopt NO_BEEP
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+# plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 # User configuration
+autoload -U colors && colors
+export PS1="%{$fg[magenta]%}%n@%m %{$fg[yellow]%}%~%{$reset_color%} "
+# export PS1="%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
 # map ctrl to caps-lock
-setxkbmap -option ctrl:nocaps
+# setxkbmap -option ctrl:nocaps
 # Added by n-install (see http://git.io/n-install-repo).
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  
+# export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  
 # export TERM=xterm-256color
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -100,3 +89,5 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias l="ls --color=auto -l"
+alias ls="ls --color=auto"

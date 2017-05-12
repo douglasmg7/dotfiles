@@ -1,0 +1,8 @@
+[user]
+	name = douglasmg7
+	email = douglasmg7@gmail.com
+[core]
+	editor = vim
+[alias]
+	lg = log --oneline --decorate --all --graph
+	s = status -s
