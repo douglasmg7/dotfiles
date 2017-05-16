@@ -1,6 +1,4 @@
-XTerm*utf8: 1
-XTerm.termName: xterm-256color-
-XTerm*font: -*-terminus-medium-*-*-*-16-*-*-*-*-*-iso10646-1
+*font: -*-terminus-medium-*-*-*-16-*-*-*-*-*-iso10646-1
 
 *background: rgb:00/00/00
 *foreground: rgb:cf/cf/cf
@@ -20,3 +18,12 @@ XTerm*font: -*-terminus-medium-*-*-*-16-*-*-*-*-*-iso10646-1
 *color13:    rgb:e6/28/ba
 *color14:    rgb:1c/f5/f5
 *color15:    rgb:ff/ff/ff
+
+XTerm*utf8: 1
+XTerm.termName: xterm-256color-
+
+!URxvt*scrollTtyOutput: false
+!URxvt*scrollWithBuffer: false
+URxvt*scrollBar: false
+URxvt*font: xft:Dejavu Sans Mono:pixelsize=14
+!URxvt*font: xft:Inconsolata:pixelsize=16 
