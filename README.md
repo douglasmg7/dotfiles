@@ -14,9 +14,15 @@ ln -s ~/dotfiles/atom/snippets.cson snippets.cson
 ln -s ~/dotfiles/atom/styles.less styles.less
 ln -s ~/dotfiles/atom/terminal-commands.json terminal-commands.json
 apm install --packages-file ~/.atom/package.list
-# i3 windows managaer
+# i3 windows manager
 mkdir ~/.i3 && cd ~/.i3
 ln -s ~/dotfiles/i3/config config
+# dwm windows manager
+mkdir aur && cd aur
+git clone https://aur.archlinux.org/dwm-git.git
+makepkg -si
+ln -s ~/dotfiles/dwm/config.h ~aur/dwm-git/src/dwm/config.h
+makepkg -fi
 # others programs config
 ln -s ~/dotfiles/babelrc .babelrc
 ln -s ~/dotfiles/bashrc .bashrc

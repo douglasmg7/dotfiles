@@ -33,7 +33,7 @@ fi
 # Status bar.
 while true
 do
-  LOCALTIME=$(date "+%Y-%m-%d %H:%M")
+  LOCALTIME=$(date "+%H:%M")
   xsetroot -name "$LOCALTIME"
   sleep 20s
 done &
