@@ -81,7 +81,8 @@ set hidden    "  keep the changes to the buffer without writing them to the file
 set autowrite     " set autowriteall
 set autowriteall  " set autowriteall
 
-let mapleader="\<space>"
+" let mapleader="\<space>"
+let mapleader="-"
 
 
 " the nerd commenter

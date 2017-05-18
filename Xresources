@@ -25,5 +25,11 @@ XTerm.termName: xterm-256color-
 !URxvt*scrollTtyOutput: false
 !URxvt*scrollWithBuffer: false
 URxvt*scrollBar: false
+
 URxvt*font: xft:Dejavu Sans Mono:pixelsize=14
+! Make undescore appear.
+URxvt.lineSpace: 1
+
 !URxvt*font: xft:Inconsolata:pixelsize=16 
+! More space between charactes.
+!URxvt.letterSpace: 1
