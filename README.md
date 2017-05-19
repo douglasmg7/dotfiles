@@ -27,12 +27,16 @@ makepkg -si
 ln -s ~/dotfiles/dwm/config.h ~/aur/dwm-git/src/dwm/config.h
 makepkg -fi
 
-# st terminal emulator
+# st - Simple Terminal.
 cd aur
 git clone https://aur.archlinux.org/st-git.git
 makepkg -si
 ln -s ~/dotfiles/st/config.h ~/aur/st-git/src/st/config.h
 makepkg -fi
+
+# Neovim.
+mkdir -p ~/.config/nvim && cd ~/.config/nvim
+ln -s ~/dotfiles/nvim/init.vim init.vim
 
 # others programs config
 ln -s ~/dotfiles/babelrc .babelrc
