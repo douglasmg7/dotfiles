@@ -46,9 +46,10 @@ ln -s ~/dotfiles/vimrc .vimrc
 ln -s ~/dotfiles/xinitrc .xinitrc
 ln -s ~/dotfiles/Xresources .Xresources
 ln -s ~/dotfiles/zshrc .zshrc
+
 # Map leftctrl to capslook keyboard
-cd /etc/udev/hwdb.d
-ln -s ~/dotfiles/70-keyboard-my.hwdb 70-keyboard-my.hwdb
+cd /usr/lib/udev/hwdb.d
+ln -s ~/dotfiles/65-keyboard-my.hwdb 65-keyboard-my.hwdb
 systemd-hwdb update
 udevadm trigger
 ```
