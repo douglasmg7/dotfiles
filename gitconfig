@@ -6,3 +6,5 @@
 [alias]
 	lg = log --oneline --decorate --all --graph
 	s = status -s
+[credential]
+	helper = cache --timeout 14400
