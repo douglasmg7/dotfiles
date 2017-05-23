@@ -37,4 +37,6 @@ do
   xsetroot -name "$LOCALTIME"
   sleep 20s
 done &
+st -e tmux &
+firefox &
 exec dwm
