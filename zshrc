@@ -91,3 +91,6 @@ export PS1="%{$fg[magenta]%}%n@%m %{$fg[yellow]%}%~%{$reset_color%} "
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias l="ls --color=auto -l"
 alias ls="ls --color=auto"
+
+# ssh-agent unit
+SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
