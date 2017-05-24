@@ -38,6 +38,10 @@ makepkg -fi
 mkdir -p ~/.config/nvim && cd ~/.config/nvim
 ln -s ~/dotfiles/nvim/init.vim init.vim
 
+# Ssh.
+mkdir -p ~/.ssh && cd ~/.ssh
+ln -s ~/dotfiles/ssh/config config
+
 # others programs config
 ln -s ~/dotfiles/babelrc .babelrc
 ln -s ~/dotfiles/bashrc .bashrc
