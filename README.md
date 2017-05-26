@@ -57,7 +57,7 @@ ln -s ~/dotfiles/zshrc .zshrc
 
 # Map leftctrl to capslook keyboard
 cd /usr/lib/udev/hwdb.d
-ln -s ~/dotfiles/65-keyboard-my.hwdb 65-keyboard-my.hwdb
+cp ~/dotfiles/65-keyboard-my.hwdb 65-keyboard-my.hwdb
 systemd-hwdb update
 udevadm trigger
 ```
