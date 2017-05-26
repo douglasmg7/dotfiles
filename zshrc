@@ -92,5 +92,5 @@ export PS1="%{$fg[magenta]%}%n@%m %{$fg[yellow]%}%~%{$reset_color%} "
 alias l="ls --color=auto -l"
 alias ls="ls --color=auto"
 
-# ssh-agent unit
+# ssh-agent unit use this var.
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
