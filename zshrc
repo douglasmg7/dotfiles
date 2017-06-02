@@ -4,8 +4,6 @@
 # Path to your oh-my-zsh installation.
 # export ZSH=/home/douglasmg7/.oh-my-zsh
 
-# no beep
-setopt NO_BEEP
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -81,6 +79,30 @@ export PS1="%{$fg[magenta]%}%n@%m %{$fg[yellow]%}%~%{$reset_color%} "
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# no beep
+setopt NO_BEEP
+
+# If you type foo, and it isn't a command, and it is a directory in your cdpath, go there.
+setopt auto_cd 
+
+# ====== History ======
+# History config.
+export HISTSIZE=2000
+export HISTFILE="$HOME/.history"
+# Save history commands.
+export SAVEHIST=$HISTSIZE
+# To prevent history from recording duplicated entries (such as ls -l entered many times during single shell session), you can set the hist_ignore_all_dups option.
+setopt hist_ignore_all_dups
+# A useful trick to prevent particular entries from being recorded into a history by preceding them with at least one space.
+setopt hist_ignore_space
+# Allow multiple terminal sessions to all append to one zsh command history.
+setopt append_history 
+
+# ====== Completion ======
+# show completion menu on successive tab press. needs unsetop menu_complete to work.
+setopt auto_menu 
+setopt complete_in_word # Allow completion from within a word/phrase.
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -96,3 +118,5 @@ alias ls="ls --color=auto"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+
+HISTFILE="$HOME/.zsh_history"
