@@ -34,7 +34,8 @@ fi
 while true
 do
   LOCALTIME=$(date "+%H:%M")
-  xsetroot -name "$LOCALTIME"
+  WIFI=$(iw dev wlan0 link | grep SSID | cut -c8-)
+  xsetroot -name " $WIFI - $LOCALTIME"
   sleep 20s
 done &
 st -e tmux &
