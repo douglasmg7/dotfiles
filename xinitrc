@@ -39,5 +39,6 @@ do
   sleep 20s
 done &
 st -e tmux &
+sublime &
 firefox &
 exec dwm
