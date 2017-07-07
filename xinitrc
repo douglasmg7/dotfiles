@@ -38,6 +38,8 @@ do
   xsetroot -name " $WIFI - $LOCALTIME"
   sleep 20s
 done &
+# Right alt to accentuation
+setxkbmap -option compose:ralt &
 st -e tmux &
 sublime &
 firefox &
