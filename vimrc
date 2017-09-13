@@ -121,9 +121,9 @@ inoremap <bs> <nop>
 inoremap <del> <nop>
 
 " move to begin of line
-nnoremap H 0
+" nnoremap H 0
 " move to end of line
-nnoremap L $
+" nnoremap L $
 
 " page up
 nnoremap <C-f> z+
