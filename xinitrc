@@ -33,9 +33,10 @@ fi
 # Status bar.
 while true
 do
+  BATTERY=$(acpi -i | head -1 | cut -f3 -d, | cut -f2 -d:)
   LOCALTIME=$(date "+%H:%M")
   WIFI=$(iw dev wlan0 link | grep SSID | cut -c8-)
-  xsetroot -name " $WIFI - $LOCALTIME"
+  xsetroot -name " $BATTERY - $WIFI - $LOCALTIME"
   sleep 20s
 done &
 # Right alt to accentuation
