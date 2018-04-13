@@ -42,6 +42,6 @@ done &
 # Right alt to accentuation
 setxkbmap -option compose:ralt &
 st -e tmux &
-# sublime &
-# firefox &
+sublime &
+firefox &
 exec dwm
