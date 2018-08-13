@@ -30,6 +30,7 @@ Plugin 'sirver/ultisnips' " snippet engine
 Plugin 'honza/vim-snippets' " snippets
 Plugin 'bling/vim-bufferline' " Super simple vim plugin to show the list of buffers in the command bar
 Plugin 'lifepillar/vim-solarized8'
+Plugin 'fatih/vim-go' " Go development plugin for Vim
 
 " All of your Plugins must be added before the following line
 call vundle#end()
