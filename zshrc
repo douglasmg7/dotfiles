@@ -123,3 +123,6 @@ HISTFILE="$HOME/.zsh_history"
 
 # ====== Golang ======
 export GOPATH="$HOME/code/go"
+
+# ====== Project ecom  ======
+export ECOMPATH="$HOME/code/go/src/github.com/douglasmg7/ecom/"
