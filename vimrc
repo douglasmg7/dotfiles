@@ -157,3 +157,6 @@ iabbrev vc voce
 " example of autocmd
 autocmd filetype javascript iabbrev <buffer>cl console.log(
 autocmd filetype javascript set commentstring=#\ %s
+
+" Disable insert comment after insert a blank line after a comment line.
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

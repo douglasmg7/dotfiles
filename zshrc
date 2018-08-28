@@ -114,6 +114,10 @@ setopt complete_in_word # Allow completion from within a word/phrase.
 alias l="ls --color=auto -l"
 alias ls="ls --color=auto"
 
+# Default editor (to use sudoedit).
+export EDITOR=vim
+bindkey -e  # Restore key bind to emacs, because the command befor set it to vim.
+
 # ssh-agent unit use this var.
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
@@ -126,3 +130,4 @@ export GOPATH="$HOME/code/go"
 
 # ====== Project ecom  ======
 export ECOMPATH="$HOME/code/go/src/github.com/douglasmg7/ecom/"
+
