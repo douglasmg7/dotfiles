@@ -34,7 +34,10 @@ makepkg -si
 ln -s ~/dotfiles/st/config.h ~/aur/st-git/src/st/config.h
 makepkg -fi
 
-# Neovim.
+# Vim and Neovim.
+ln -s ~/dotfiles/vimrc .vimrc
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# Inside vim - :PluginInstall
 mkdir -p ~/.config/nvim && cd ~/.config/nvim
 ln -s ~/dotfiles/nvim/init.vim init.vim
 
@@ -52,7 +55,6 @@ ln -s ~/dotfiles/gitconfig .gitconfig
 ln -s ~/dotfiles/ideavimrc.json .ideavimrc.json
 ln -s ~/dotfiles/jshintrc .jshintrc
 ln -s ~/dotfiles/tmux.conf .tmux.conf
-ln -s ~/dotfiles/vimrc .vimrc
 ln -s ~/dotfiles/xinitrc .xinitrc
 ln -s ~/dotfiles/Xresources .Xresources
 ln -s ~/dotfiles/zshrc .zshrc
