@@ -126,8 +126,6 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 HISTFILE="$HOME/.zsh_history"
 
 # ====== Golang ======
-export GOPATH="$HOME/code/go"
+export GOPATH="$HOME/code/golang"
 
-# ====== Project ecom  ======
-export ECOMPATH="$HOME/code/go/src/github.com/douglasmg7/ecom/"
 
