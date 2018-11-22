@@ -1,7 +1,16 @@
 {
 	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
-		"Package Control"
+		"Gofmt",
+		"Golang Build",
+		"Package Control",
+		"Pug",
+		"SideBarEnhancements",
+		"Stylus",
+		"Stylus-Snippets"
 	]
 }
