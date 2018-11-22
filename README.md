@@ -59,6 +59,8 @@ ln -s ~/dotfiles/xinitrc .xinitrc
 ln -s ~/dotfiles/Xresources .Xresources
 ln -s ~/dotfiles/zshrc .zshrc
 ln -s ~/dotfiles/sublime/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+cd ~/.moc/
+ln -s ~/dotfiles/moc/config .
 
 # Map leftctrl to capslook keyboard
 cd /usr/lib/udev/hwdb.d

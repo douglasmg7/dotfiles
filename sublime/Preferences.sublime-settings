@@ -36,7 +36,11 @@
 		"log",
 		"semantic"
 	],
+<<<<<<< HEAD
 	"font_size": 13,
+=======
+	"font_size": 10,
+>>>>>>> 3640013108d30397a21d19c9375db057aea07c14
 	"ignored_packages":
 	[
 	],
