@@ -20,11 +20,7 @@ Plugin 'wavded/vim-stylus' " syntax highligth for stylus
 Plugin 'scrooloose/syntastic' " syntax check (linter)
 Plugin 'pangloss/vim-javascript' " syntax highlighting and improved indentation for java script
 Plugin 'twerth/ir_black' " colorscheme
-Plugin 'notpratheek/vim-luna' " colorscheme
 Plugin 'morhetz/gruvbox' " colorscheme
-Plugin 'tomasr/molokai' " colorscheme
-Plugin 'mhartington/oceanic-next' " colorscheme
-Plugin 'altercation/vim-colors-solarized' " colorscheme
 Plugin 'terryma/vim-multiple-cursors' " true sublime text style multiple selections for vim
 Plugin 'sirver/ultisnips' " snippet engine
 Plugin 'honza/vim-snippets' " snippets
@@ -42,11 +38,16 @@ filetype plugin on    " required by vundle - end vundle
 
 set t_Co=256
 syntax enable
+set background=light
+let g:gruvbox_contrast_light='hard'
+colorscheme gruvbox
 
-set background=dark
-colorscheme ir_black
+" if has('gui_running')
+  " set background=light
+" else
+  " set background=dark
+" endif
 
-" set background=dark
 " if !has("gui_running")
   " let g:solarized_termtrans=1
   " let g:solarized_termcolors=256
@@ -154,6 +155,12 @@ inoremap <C-u> <esc>viwua
 
 " example of abbreviation
 iabbrev vc voce
+
+" golang
+" save and run
+au filetype go map <leader>r :w <bar> !go run %<cr>
+autocmd filetype go inoremap { {<cr>}<esc>ko
+autocmd filetype go inoremap ( ()<esc>i
 
 " example of autocmd
 autocmd filetype javascript iabbrev <buffer>cl console.log(
