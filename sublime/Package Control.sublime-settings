@@ -7,10 +7,13 @@
 	[
 		"Gofmt",
 		"Golang Build",
+		"gruvbox",
 		"Package Control",
 		"Pug",
 		"SideBarEnhancements",
+		"Solarized Color Scheme",
 		"Stylus",
-		"Stylus-Snippets"
+		"Stylus-Snippets",
+		"Theme - Soda SolarizedDark"
 	]
 }
