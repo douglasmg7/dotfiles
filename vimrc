@@ -159,8 +159,9 @@ iabbrev vc voce
 " golang
 " save and run
 au filetype go map <leader>r :w <bar> !go run %<cr>
-autocmd filetype go inoremap { {<cr>}<esc>ko
-autocmd filetype go inoremap ( ()<esc>i
+" au BufRead *.go inoremap { {<cr>}<esc>ko
+" autocmd filetype go inoremap { {<cr>}<esc>ko
+" autocmd filetype go inoremap ( ()<esc>i
 
 " example of autocmd
 autocmd filetype javascript iabbrev <buffer>cl console.log(
