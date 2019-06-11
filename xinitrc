@@ -35,7 +35,7 @@ while true
 do
   BATTERY=$(acpi -i | head -1 | cut -f2 -d,)
   LOCALTIME=$(date "+%H:%M")
-  WIFI=$(iw dev wlan0 link | grep SSID | cut -c8-)
+  WIFI=$(iw dev wlo1 link | grep SSID | cut -c8-)
   xsetroot -name " $BATTERY - $WIFI - $LOCALTIME"
   sleep 20s
 done &
