@@ -85,31 +85,64 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
+
+  // Gruvbox -  https://github.com/Mayccoll/Gogh/blob/master/themes/gruvbox.sh
+
 	/* 8 normal colors */
-  "#282a2e",
-  "#a54242",
-  "#8c9440",
-  "#de935f",
-  "#5f819d",
-  "#85678f",
-  "#5e8d87",
-  "#707880",
+  "#fbf1c7",  // Host
+  "#cc241d",  // Syntax string
+  "#98971a",  // Command
+  "#d79921",  // Command color 2
+  "#458588",  // Path
+  "#b16286",  // Syntax var
+  "#689d6a",  // Promp
+  "#7c6f64",  //
 
 	/* 8 bright colors */
-  "#373b41",
-  "#cc6666",
-  "#b5bd68",
-  "#f0c674",
-  "#81a2be",
-  "#b294bb",
-  "#8abeb7",
-  "#c5c8c6",
+  "#928374",  //
+  "#9d0006",  // Command errror
+  "#79740e",  // Exec
+  "#b57614",  //
+  "#076678",  // Folder
+  "#8f3f71",  //
+  "#427b58",  //
+  "#3c3836",  //
+
+
+  // Dark theme.
+
+	/* 8 normal colors */
+  // "#282a2e",
+  // "#a54242",
+  // "#8c9440",
+  // "#de935f",
+  // "#5f819d",
+  // "#85678f",
+  // "#5e8d87",
+  // "#707880",
+
+	/* 8 bright colors */
+  // "#373b41",
+  // "#cc6666",
+  // "#b5bd68",
+  // "#f0c674",
+  // "#81a2be",
+  // "#b294bb",
+  // "#8abeb7",
+  // "#c5c8c6",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-  "#1d1f21",
-  "#c5c8c6",
+  // Gruvbox.
+  "#fbf1c7",  // Background.
+  "#3c3836",  // Text.
+
+  // Dark theme.
+	/* more colors can be added after 255 to use with DefaultXX */
+  // "#1d1f21",
+  // "#c5c8c6",
+
   "#555555",
 };
 

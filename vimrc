@@ -38,8 +38,8 @@ filetype plugin on    " required by vundle - end vundle
 
 set t_Co=256
 syntax enable
-" set background=light
-set background=dark
+set background=light
+" set background=dark
 let g:gruvbox_contrast_light='hard'
 colorscheme gruvbox
 
