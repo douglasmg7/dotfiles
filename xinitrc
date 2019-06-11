@@ -39,8 +39,11 @@ do
   xsetroot -name " $BATTERY - $WIFI - $LOCALTIME"
   sleep 20s
 done &
-# Right alt to accentuation
-setxkbmap -option compose:ralt &
+# Right alt to accentuation.
+# setxkbmap -option compose:ralt &
+# No composition ralt.
+# setxkbmap -model abnt2 -layout br -option &
+# setxkbmap -model pc105 -layout br -option &
 # st &
 firefox &
 sublime &
