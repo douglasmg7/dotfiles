@@ -86,27 +86,51 @@ unsigned int tabspaces = 4;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 
+  // Tango from ubuntu.
+
+	/* 8 normal colors */
+  "#2E3436",
+  "#CC0000",
+  "#4E9A06",
+  "#C4A000",
+  "#3465A4",
+  "#75507B",
+  "#06989A",
+  "#D3D7CF",
+
+	/* 8 bright colors */
+  "#555753",
+  "#EF2929",
+  "#8AE234",
+  "#FCE94F",
+  "#729FCF",
+  "#AD7FA8",
+  "#34E2E2",
+  "#EEEEEC",
+
+   
+
   // Gruvbox -  https://github.com/Mayccoll/Gogh/blob/master/themes/gruvbox.sh
 
 	/* 8 normal colors */
-  "#fbf1c7",  // Host
-  "#cc241d",  // Syntax string
-  "#98971a",  // Command
-  "#d79921",  // Command color 2
-  "#458588",  // Path
-  "#b16286",  // Syntax var
-  "#689d6a",  // Promp
-  "#7c6f64",  //
+  // "#fbf1c7",  // Host
+  // "#cc241d",  // Syntax string
+  // "#98971a",  // Command
+  // "#d79921",  // Command color 2
+  // "#458588",  // Path
+  // "#b16286",  // Syntax var
+  // "#689d6a",  // Promp
+  // "#7c6f64",  //
 
 	/* 8 bright colors */
-  "#928374",  //
-  "#9d0006",  // Command errror
-  "#79740e",  // Exec
-  "#b57614",  //
-  "#076678",  // Folder
-  "#8f3f71",  //
-  "#427b58",  //
-  "#3c3836",  //
+  // "#928374",  //
+  // "#9d0006",  // Command errror
+  // "#79740e",  // Exec
+  // "#b57614",  //
+  // "#076678",  // Folder
+  // "#8f3f71",  //
+  // "#427b58",  //
+  // "#3c3836",  //
 
 
   // Dark theme.
@@ -134,9 +158,15 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
+  // Tango.
+  "#FDF6E3",   // Background"
+  "#333333",   // Text"
+  // "#657B83",   // Text"
+
+	/* more colors can be added after 255 to use with DefaultXX */
   // Gruvbox.
-  "#fbf1c7",  // Background.
-  "#3c3836",  // Text.
+  // "#fbf1c7",  // Background.
+  // "#3c3836",  // Text.
 
   // Dark theme.
 	/* more colors can be added after 255 to use with DefaultXX */
