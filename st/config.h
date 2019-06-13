@@ -7,7 +7,7 @@
  */
 static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
 // static char *font = "Droid Sans Mono:pixelsize=14:style=Regular:autohint=true";
-static int borderpx = 2;
+static int borderpx = 9;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -198,11 +198,9 @@ static unsigned int cursorshape = 2;
 /*
  * Default columns and rows numbers
  */
-
-// static unsigned int cols = 80;
-static unsigned int cols = 60;
-// static unsigned int rows = 24;
-static unsigned int rows = 12;
+ 
+static unsigned int cols = 80;
+static unsigned int rows = 24;
 
 /*
  * Default colour and shape of the mouse cursor
