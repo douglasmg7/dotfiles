@@ -36,10 +36,15 @@ filetype plugin on    " required by vundle - end vundle
 " conif backspace
 " set backspace=indent,eol,start
 
-set t_Co=256
+if $TERM == "linux" 
+  set background=dark
+  set t_Co=16
+else
+  set background=light
+  set t_Co=256
+endif
+
 syntax enable
-set background=light
-" set background=dark
 let g:gruvbox_contrast_light='hard'
 colorscheme gruvbox
 
