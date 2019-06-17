@@ -33,3 +33,27 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
     # echo -en "\e]PFdedede" #white
     # clear #for background artifacting
   # fi
+
+# Golang path.
+export GOPATH=$HOME/code/golang
+export PATH=$PATH:$GOPATH/bin
+# Dmg golang src.
+export GS=$GOPATH/src/github.com/douglasmg7
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/douglasmg7/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/douglasmg7/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/douglasmg7/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/douglasmg7/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
