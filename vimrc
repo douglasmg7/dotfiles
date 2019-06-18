@@ -5,7 +5,7 @@ filetype off		" vim do not try define the file type - required by vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'  " let Vundle manage Vundle, required
-Plugin 'kchmck/vim-coffee-script' " syntax, ident, compile and more for coffee-script
+" Plugin 'kchmck/vim-coffee-script' " syntax, ident, compile and more for coffee-script
 Plugin 'easymotion/vim-easymotion' " vim motions on speed
 Plugin 'moll/vim-node' " node tools
 Plugin 'vim-scripts/ScrollColors'
@@ -28,6 +28,7 @@ Plugin 'bling/vim-bufferline' " Super simple vim plugin to show the list of buff
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'fatih/vim-go' " Go development plugin for Vim
 Plugin 'gisraptor/vim-lilypond-integrator'  " Vim Lilypond Integrator.
+Plugin 'valloric/youcompleteme'   " A code-completion engine for Vim.
 
 " All of your Plugins must be added before the following line
 call vundle#end()
