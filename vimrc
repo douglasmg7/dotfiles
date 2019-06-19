@@ -29,6 +29,7 @@ Plugin 'lifepillar/vim-solarized8'
 Plugin 'fatih/vim-go' " Go development plugin for Vim
 Plugin 'gisraptor/vim-lilypond-integrator'  " Vim Lilypond Integrator.
 Plugin 'valloric/youcompleteme'   " A code-completion engine for Vim.
+Plugin 'kshenoy/vim-signature'    " Place, toggle and display marks.
 
 " All of your Plugins must be added before the following line
 call vundle#end()
