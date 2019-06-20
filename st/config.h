@@ -7,7 +7,7 @@
  */
 static char *font = "Liberation Mono:pixelsize=14:antialias=true:autohint=true";
 // static char *font = "Droid Sans Mono:pixelsize=14:style=Regular:autohint=true";
-static int borderpx = 9;
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -85,57 +85,34 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-
-  // Tango from ubuntu.
-
 	/* 8 normal colors */
-  "#2E3436",
-  "#CC0000",
-  "#4E9A06",
-  "#C4A000",
-  "#3465A4",
-  "#75507B",
-  "#06989A",
-  "#D3D7CF",
+	"black",
+	"red3",
+	"green3",
+	"yellow3",
+	"blue2",
+	"magenta3",
+	"cyan3",
+	"gray90",
 
 	/* 8 bright colors */
-  "#555753",
-  "#EF2929",
-  "#8AE234",
-  "#FCE94F",
-  "#729FCF",
-  "#AD7FA8",
-  "#34E2E2",
-  "#EEEEEC",
+	"gray50",
+	"red",
+	"green",
+	"yellow",
+	"#5c5cff",
+	"magenta",
+	"cyan",
+	"white",
 
-   
+	[255] = 0,
 
-  // Gruvbox -  https://github.com/Mayccoll/Gogh/blob/master/themes/gruvbox.sh
+	/* more colors can be added after 255 to use with DefaultXX */
+	"#cccccc",
+	"#555555",
 
-	/* 8 normal colors */
-  // "#fbf1c7",  // Host
-  // "#cc241d",  // Syntax string
-  // "#98971a",  // Command
-  // "#d79921",  // Command color 2
-  // "#458588",  // Path
-  // "#b16286",  // Syntax var
-  // "#689d6a",  // Promp
-  // "#7c6f64",  //
-
-	/* 8 bright colors */
-  // "#928374",  //
-  // "#9d0006",  // Command errror
-  // "#79740e",  // Exec
-  // "#b57614",  //
-  // "#076678",  // Folder
-  // "#8f3f71",  //
-  // "#427b58",  //
-  // "#3c3836",  //
-
-
-  // Dark theme.
-
-	/* 8 normal colors */
+  // // Dark theme.
+	// [> 8 normal colors <]
   // "#282a2e",
   // "#a54242",
   // "#8c9440",
@@ -145,7 +122,7 @@ static const char *colorname[] = {
   // "#5e8d87",
   // "#707880",
 
-	/* 8 bright colors */
+	// [> 8 bright colors <]
   // "#373b41",
   // "#cc6666",
   // "#b5bd68",
@@ -155,25 +132,40 @@ static const char *colorname[] = {
   // "#8abeb7",
   // "#c5c8c6",
 
-	[255] = 0,
+	// [255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX */
-  // Tango.
-  "#FDF6E3",   // Background"
-  "#333333",   // Text"
-  // "#657B83",   // Text"
+	// [> more colors can be added after 255 to use with DefaultXX <]
+  // "#EEEEEE", //"#FDF6E3",   // Foreground."
+  // "#000000",   // Background."
+  // "#555555",
 
-	/* more colors can be added after 255 to use with DefaultXX */
-  // Gruvbox.
-  // "#fbf1c7",  // Background.
-  // "#3c3836",  // Text.
+  // // Light theme.
+	// [> 8 normal colors <]
+  // "#2E3436",  // Black.
+  // "#CC0000",  // Red.
+  // "#4E9A06",  // Green.
+  // "#C4A000",  // Yellow.
+  // "#3465A4",  // Blue.
+  // "#75507B",  // Magenta.
+  // "#06989A",  // Cyan.
+  // "#D3D7CF",  // White.
 
-  // Dark theme.
-	/* more colors can be added after 255 to use with DefaultXX */
-  // "#1d1f21",
-  // "#c5c8c6",
+	// [> 8 bright colors <]
+  // "#555753",  // Black.
+  // "#EF2929",  // Red.
+  // "#8AE234",  // Green.
+  // "#FCE94F",  // Yellow.
+  // "#729FCF",  // Blue.
+  // "#AD7FA8",  // Magenta.
+  // "#34E2E2",  // Cyan.
+  // "#EEEEEC",  // White.
+   
+	// [255] = 0,
 
-  "#555555",
+	// [> more colors can be added after 255 to use with DefaultXX <]
+  // "#FDF6E3",   // Background"
+  // "#333333",   // Text"
+  // "#555555",
 };
 
 
@@ -181,10 +173,15 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-static unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 258;
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 1;
+static unsigned int defaultrcs = 257;
+
+// unsigned int defaultfg = 256;
+// unsigned int defaultbg = 257;
+// static unsigned int defaultcs = 257;
+// static unsigned int defaultrcs = 258;
 
 /*
  * Default shape of cursor

@@ -42,24 +42,15 @@ if $TERM == "linux"
   set background=dark
   set t_Co=16
 else
-  set background=light
+  " set background=light
+  set background=dark
   set t_Co=256
 endif
 
 syntax enable
-let g:gruvbox_contrast_light='hard'
-colorscheme gruvbox
-
-" if has('gui_running')
-  " set background=light
-" else
-  " set background=dark
-" endif
-
-" if !has("gui_running")
-  " let g:solarized_termtrans=1
-  " let g:solarized_termcolors=256
-" endif
+colorscheme ir_black
+" colorscheme gruvbox
+" let g:gruvbox_contrast_light='hard'
 " colorscheme solarized
 
 set guioptions-=m		"remove menu bar
