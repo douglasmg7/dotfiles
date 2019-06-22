@@ -8,28 +8,29 @@ Plugin 'gmarik/Vundle.vim'  " let Vundle manage Vundle, required
 " Plugin 'kchmck/vim-coffee-script' " syntax, ident, compile and more for coffee-script
 Plugin 'easymotion/vim-easymotion' " vim motions on speed
 Plugin 'moll/vim-node' " node tools
-Plugin 'vim-scripts/ScrollColors'
-Plugin 'tpope/vim-fugitive' " git wrapper
-Plugin 'scrooloose/nerdtree' " color scroller, chooser and browser
-Plugin 'tpope/vim-surround' " quoting/parenthesizing made simple
+" Plugin 'vim-scripts/ScrollColors'
+" Plugin 'tpope/vim-fugitive' " git wrapper
+Plugin 'scrooloose/nerdtree' " A tree explorer plugin for vim
+Plugin 'tpope/vim-surround' " Quoting/parenthesizing made simple
 Plugin 'scrooloose/nerdcommenter' " intensely orgasmic commenting
 Plugin 'ctrlpvim/ctrlp.vim' " full path fuzzy file, buffer, mru, tag, ... finder
 Plugin 'digitaltoad/vim-pug' " syntax highligth and idention for pug
 Plugin 'posva/vim-vue' " syntax highligth for vue.js components
 Plugin 'wavded/vim-stylus' " syntax highligth for stylus
-Plugin 'scrooloose/syntastic' " syntax check (linter)
+" Plugin 'scrooloose/syntastic' " syntax check (linter)
 Plugin 'pangloss/vim-javascript' " syntax highlighting and improved indentation for java script
 Plugin 'twerth/ir_black' " colorscheme
-Plugin 'morhetz/gruvbox' " colorscheme
+" Plugin 'morhetz/gruvbox' " colorscheme
 Plugin 'terryma/vim-multiple-cursors' " true sublime text style multiple selections for vim
-Plugin 'sirver/ultisnips' " snippet engine
-Plugin 'honza/vim-snippets' " snippets
-Plugin 'bling/vim-bufferline' " Super simple vim plugin to show the list of buffers in the command bar
-Plugin 'lifepillar/vim-solarized8'
+" Plugin 'sirver/ultisnips' " snippet engine
+" Plugin 'honza/vim-snippets' " snippets
+" Plugin 'bling/vim-bufferline' " Super simple vim plugin to show the list of buffers in the command bar
+" Plugin 'lifepillar/vim-solarized8'
 Plugin 'fatih/vim-go' " Go development plugin for Vim
-Plugin 'gisraptor/vim-lilypond-integrator'  " Vim Lilypond Integrator.
+" Plugin 'gisraptor/vim-lilypond-integrator'  " Vim Lilypond Integrator.
 Plugin 'valloric/youcompleteme'   " A code-completion engine for Vim.
-Plugin 'kshenoy/vim-signature'    " Place, toggle and display marks.
+" Plugin 'altercation/vim-colors-solarized'   " Precision colorscheme for the vim text editor.
+" Plugin 'kshenoy/vim-signature'    " Place, toggle and display marks.
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -38,20 +39,12 @@ filetype plugin on    " required by vundle - end vundle
 " conif backspace
 " set backspace=indent,eol,start
 
-if $TERM == "linux" 
-  set background=dark
-  set t_Co=16
-else
-  " set background=light
-  set background=dark
-  set t_Co=256
-endif
-
 syntax enable
+set background=dark
 colorscheme ir_black
+
 " colorscheme gruvbox
 " let g:gruvbox_contrast_light='hard'
-" colorscheme solarized
 
 set guioptions-=m		"remove menu bar
 set guioptions-=T		"remove toolbar
@@ -83,21 +76,25 @@ set hidden    "  keep the changes to the buffer without writing them to the file
 set autowrite     " set autowriteall
 set autowriteall  " set autowriteall
 
+" Status bar format.
+" set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
+" set laststatus=2  " always show statusline
+set laststatus=1
+
 " let mapleader="\<space>"
 let mapleader="-"
-
 
 " the nerd commenter
 let g:NERDSpaceDelims=1 " number of space when comment
 " airline
-" set laststatus=2  " always show statusline
-" let g:airline_powerline_fonts=1  " populate g:airline_symbols dictionary with the powerline symbols
-" let g:airline#extensions#tabline#enabled=1  " smart tab line
+
 " nerd tree
 nnoremap <f5> :NERDTreeToggle<cr>
+
 " syntastic
 let g:syntastic_javascript_checkers = ['eslint']
 " let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
+
 " snippets
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -133,7 +130,9 @@ nnoremap <C-f> z+
 nnoremap <C-b> z^
 
 " open .vimrc in to split view
-nnoremap <leader>ev :e $MYVIMRC<cr>
+" nnoremap <leader>ev :e $MYVIMRC<cr>
+nnoremap <leader>ev :e ~/.vimrc<cr>
+
 " save and reload .vimrc
 nnoremap <leader>wv :w<cr>:so $MYVIMRC<cr>
 

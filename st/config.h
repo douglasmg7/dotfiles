@@ -85,98 +85,80 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
 
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+  // 8 normal colors
+  [0] = "#282a2e",  // black  
+  [1] = "#a54242",  // red    
+  [2] = "#8c9440",  // green  
+  [3] = "#de935f",  // yellow 
+  [4] = "#5f819d",  // blue   
+  [5] = "#85678f",  // magenta
+  [6] = "#5e8d87",  // cyan   
+  [7] = "#707880",  // white  
 
-	[255] = 0,
+  // 8 bright colors
+  [8]  = "#373b41",  // lack  
+  [9]  = "#cc6666",  // ed    
+  [10] = "#b5bd68",  // reen  
+  [11] = "#f0c674",  // ellow 
+  [12] = "#81a2be",  // lue   
+  [13] = "#b294bb",  // agenta
+  [14] = "#8abeb7",  // yan   
+  [15] = "#c5c8c6",  // hite  
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+  /* special colors */
+  // [256] = "#1d1f21", [> background <]
+  [256] = "#000000", /* background */
+  [257] = "#c5c8c6", /* foreground */
+  [258] = "#555555", /* foreground */
 
-  // // Dark theme.
 	// [> 8 normal colors <]
-  // "#282a2e",
-  // "#a54242",
-  // "#8c9440",
-  // "#de935f",
-  // "#5f819d",
-  // "#85678f",
-  // "#5e8d87",
-  // "#707880",
+	// "black",
+	// "red3",
+	// "green3",
+	// "yellow3",
+	// "blue2",
+	// "magenta3",
+	// "cyan3",
+	// "gray90",
 
 	// [> 8 bright colors <]
-  // "#373b41",
-  // "#cc6666",
-  // "#b5bd68",
-  // "#f0c674",
-  // "#81a2be",
-  // "#b294bb",
-  // "#8abeb7",
-  // "#c5c8c6",
+	// "gray50",
+	// "red",
+	// "green",
+	// "yellow",
+	// "#5c5cff",
+	// "magenta",
+	// "cyan",
+	// "white",
 
 	// [255] = 0,
 
 	// [> more colors can be added after 255 to use with DefaultXX <]
-  // "#EEEEEE", //"#FDF6E3",   // Foreground."
-  // "#000000",   // Background."
-  // "#555555",
-
-  // // Light theme.
-	// [> 8 normal colors <]
-  // "#2E3436",  // Black.
-  // "#CC0000",  // Red.
-  // "#4E9A06",  // Green.
-  // "#C4A000",  // Yellow.
-  // "#3465A4",  // Blue.
-  // "#75507B",  // Magenta.
-  // "#06989A",  // Cyan.
-  // "#D3D7CF",  // White.
-
-	// [> 8 bright colors <]
-  // "#555753",  // Black.
-  // "#EF2929",  // Red.
-  // "#8AE234",  // Green.
-  // "#FCE94F",  // Yellow.
-  // "#729FCF",  // Blue.
-  // "#AD7FA8",  // Magenta.
-  // "#34E2E2",  // Cyan.
-  // "#EEEEEC",  // White.
-   
-	// [255] = 0,
-
-	// [> more colors can be added after 255 to use with DefaultXX <]
-  // "#FDF6E3",   // Background"
-  // "#333333",   // Text"
-  // "#555555",
+	// "#cccccc",
+	// "#555555",
 };
+
+/*
+ * Default colors (colorname index)
+ * foreground, background, cursor
+ */
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+unsigned int defaultcs = 257;
+unsigned int defaultrcs = 258;
 
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 1;
-static unsigned int defaultrcs = 257;
+// unsigned int defaultfg = 7;
+// unsigned int defaultbg = 0;
+// static unsigned int defaultcs = 1;
+// static unsigned int defaultrcs = 257;
+
+
 
 // unsigned int defaultfg = 256;
 // unsigned int defaultbg = 257;
