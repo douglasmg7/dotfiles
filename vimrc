@@ -24,7 +24,7 @@ Plugin 'twerth/ir_black' " colorscheme
 Plugin 'terryma/vim-multiple-cursors' " true sublime text style multiple selections for vim
 " Plugin 'sirver/ultisnips' " snippet engine
 " Plugin 'honza/vim-snippets' " snippets
-" Plugin 'bling/vim-bufferline' " Super simple vim plugin to show the list of buffers in the command bar
+Plugin 'bling/vim-bufferline' " Super simple vim plugin to show the list of buffers in the command bar
 " Plugin 'lifepillar/vim-solarized8'
 Plugin 'fatih/vim-go' " Go development plugin for Vim
 " Plugin 'gisraptor/vim-lilypond-integrator'  " Vim Lilypond Integrator.
@@ -51,9 +51,9 @@ set guioptions-=T		"remove toolbar
 set guioptions-=r		"remove right-hand scroll bar
 set guioptions-=L		"remove left-hand scroll bar
 
-set tabstop=2   		"how many columns a tab count for
-set shiftwidth=2		"how many columns text is identend with << and >>
-set softtabstop=2       "control how many columns vim uses when you hit <tab>
+set tabstop=4   		"how many columns a tab count for
+set shiftwidth=4		"how many columns text is identend with << and >>
+set softtabstop=4       "control how many columns vim uses when you hit <tab>
 set expandtab			"hitting tab will produce spaces
 " set noexpandtab			"hitting tab will not produce spaces
 
