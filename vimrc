@@ -86,7 +86,9 @@ let mapleader="-"
 
 " the nerd commenter
 let g:NERDSpaceDelims=1 " number of space when comment
-" airline
+
+" YCM
+let g:ycm_autoclose_preview_window_after_insertion=1
 
 " nerd tree
 nnoremap <f5> :NERDTreeToggle<cr>
