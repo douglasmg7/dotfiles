@@ -178,3 +178,7 @@ autocmd filetype javascript set commentstring=#\ %s
 
 " Disable insert comment after insert a blank line after a comment line.
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" File type detect.
+au BufNewFile,BufRead *.tmpl set filetype=gohtmltmpl
+au BufNewFile,BufRead *.tpl set filetype=gohtmltmpl
