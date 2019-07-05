@@ -31,6 +31,7 @@ Plugin 'fatih/vim-go' " Go development plugin for Vim
 Plugin 'valloric/youcompleteme'   " A code-completion engine for Vim.
 " Plugin 'altercation/vim-colors-solarized'   " Precision colorscheme for the vim text editor.
 " Plugin 'kshenoy/vim-signature'    " Place, toggle and display marks.
+Plugin 'mattn/emmet-vim'	"Emmet for vim.
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -99,6 +100,9 @@ let g:ycm_autoclose_preview_window_after_completion=1
 " set completeopt=longest,menuone
 set completeopt=menuone
 
+" Emmet.
+let g:user_emmet_leader_key=','
+
 " nerd tree
 nnoremap <f5> :NERDTreeToggle<cr>
 
@@ -145,7 +149,8 @@ nnoremap <C-b> z^
 nnoremap <leader>ev :e ~/.vimrc<cr>
 
 " save and reload .vimrc
-nnoremap <leader>wv :w<cr>:so $MYVIMRC<cr>
+" nnoremap <leader>wv :w<cr>:so $MYVIMRC<cr>
+nnoremap <leader>wv :w<cr>:so ~/.vimrc<cr>
 
 " surround the word in double quotes
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
