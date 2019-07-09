@@ -39,6 +39,8 @@ export GOPATH=$HOME/code/golang
 export PATH=$PATH:$GOPATH/bin
 # Dmg golang src.
 export GS=$GOPATH/src/github.com/douglasmg7
+# Zunka path.
+export ZUNKAPATH=~/.local/share/zunka
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
