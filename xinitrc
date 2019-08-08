@@ -45,7 +45,6 @@ done &
 # setxkbmap -model abnt2 -layout br -option &
 # setxkbmap -model pc105 -layout br -option &
 # st &
-firefox &
-sublime &
+chromium &
 st -e tmux &
 exec dwm
