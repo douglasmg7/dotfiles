@@ -101,7 +101,7 @@ let g:ycm_autoclose_preview_window_after_completion=1
 set completeopt=menuone
 
 " Emmet.
-let g:user_emmet_leader_key=','
+" let g:user_emmet_leader_key=','
 
 " nerd tree
 nnoremap <f5> :NERDTreeToggle<cr>
