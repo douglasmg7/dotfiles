@@ -52,12 +52,11 @@ set guioptions-=T		"remove toolbar
 set guioptions-=r		"remove right-hand scroll bar
 set guioptions-=L		"remove left-hand scroll bar
 
-set tabstop=4   		"how many columns a tab count for
+set tabstop=4			"how many columns a tab count for
 set shiftwidth=4		"how many columns text is identend with << and >>
 set softtabstop=4       "control how many columns vim uses when you hit <tab>
-set expandtab			"hitting tab will produce spaces
-" set noexpandtab			"hitting tab will not produce spaces
-
+" set expandtab			"hitting tab will produce spaces
+" set noexpandtab		"hitting tab will not produce spaces
 set number				"show line number
 set numberwidth=3		"line number width
 
@@ -188,3 +187,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 au BufNewFile,BufRead *.tmpl set filetype=gohtmltmpl
 au BufNewFile,BufRead *.tpl set filetype=gohtmltmpl
 au BufNewFile,BufRead *.bundle set filetype=javascript
+
+" At end, because some thing is reseting.
+set expandtab			"hitting tab will produce spaces
