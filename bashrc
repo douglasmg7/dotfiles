@@ -39,10 +39,11 @@ export GOPATH=$HOME/code/golang
 export PATH=$PATH:$GOPATH/bin
 # Dmg golang src.
 export GS=$GOPATH/src/github.com/douglasmg7
-# Zunka path.
+# Zunka.
 export ZUNKAPATH=~/.local/share/zunka
+export ZUNKA_SRV_DB=zunkasrv.db
+export ZUNKA_ALDOWSC_DB=aldowsc.db
 
-# >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/douglasmg7/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
