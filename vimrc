@@ -186,6 +186,7 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " File type detect.
 au BufNewFile,BufRead *.tmpl set filetype=gohtmltmpl
 au BufNewFile,BufRead *.tpl set filetype=gohtmltmpl
+au BufNewFile,BufRead *.gohtml set filetype=gohtmltmpl
 au BufNewFile,BufRead *.bundle set filetype=javascript
 
 " At end, because some thing is reseting.
