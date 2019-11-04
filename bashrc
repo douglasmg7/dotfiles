@@ -34,15 +34,16 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
     # clear #for background artifacting
   # fi
 
+# Already set on /etc/profile.d/zunka.sh
 # Golang path.
-export GOPATH=$HOME/code/golang
-export PATH=$PATH:$GOPATH/bin
+# export GOPATH=$HOME/code/golang
+# export PATH=$PATH:$GOPATH/bin
 # Dmg golang src.
-export GS=$GOPATH/src/github.com/douglasmg7
+# export GS=$GOPATH/src/github.com/douglasmg7
 # Zunka.
-export ZUNKAPATH=~/.local/share/zunka
-export ZUNKA_SRV_DB=zunkasrv.db
-export ZUNKA_ALDOWSC_DB=aldowsc.db
+# export ZUNKAPATH=~/.local/share/zunka
+# export ZUNKA_SRV_DB=zunkasrv.db
+# export ZUNKA_ALDOWSC_DB=aldowsc.db
 
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/douglasmg7/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
