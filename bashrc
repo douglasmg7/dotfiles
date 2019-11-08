@@ -2,6 +2,15 @@
 # ~/.bashrc
 #
 
+# History.
+HISTSIZE=5000
+# Store bash history immediately.
+# PROMPT_COMMAND=$PROMPT_COMMAND;history -a
+# Eliminate duplicates across the whole history.
+export HISTCONTROL=ignoreboth:erasedups   # no duplicate entries
+shopt -s histappend                       # append history file
+export PROMPT_COMMAND="history -a"
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
