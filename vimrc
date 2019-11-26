@@ -72,9 +72,9 @@ set autoindent
 set smartindent
 set hls					" set higlight for search
 
-set hidden    "  keep the changes to the buffer without writing them to the file
-set autowrite     " set autowriteall
-set autowriteall  " set autowriteall
+set hidden    " opening a new file when the current buffer has unsaved changes causes files to be hidden instead of closed.
+" set autowrite     " set autowriteall
+" set autowriteall  " set autowriteall
 
 " Disable automatic newline at end of file.
 set noeol
