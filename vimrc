@@ -102,6 +102,10 @@ set completeopt=menuone
 " Emmet.
 " let g:user_emmet_leader_key=','
 
+" ctrlp pugin setup.
+" let g:ctrlp_custom_ignore = 'node_modules\|vendor\|.git'
+let g:ctrlp_custom_ignore = { 'dir': 'vendor' }
+
 " nerd tree
 nnoremap <f5> :NERDTreeToggle<cr>
 
