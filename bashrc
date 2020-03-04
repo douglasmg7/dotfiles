@@ -55,7 +55,7 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 # export ZUNKA_ALDOWSC_DB=aldowsc.db
 
 # Overwrite default value.
-export ZUNKA_SITE_PATH=/home/douglasmg7/code/zunka
+export ZUNKA_SITE_PATH=/home/douglasmg7/code/zunkasite
 
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/douglasmg7/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
