@@ -64,11 +64,11 @@ http {
       }
 
       location ~ ^/(img|css|js|icon)/ {
-        root /home/douglasmg7/code/zunka/dist;
+        root /home/douglasmg7/code/zunkasite/dist;
       }
 
       location /bower_components/ {
-        root /home/douglasmg7/code/zunka;
+        root /home/douglasmg7/code/zunkasite;
         autoindex on;
       }
     }
@@ -86,11 +86,11 @@ http {
       }
 
       location ~ ^/(img|css|js|icon)/ {
-        root /home/douglasmg7/code/zunka/dist;
+        root /home/douglasmg7/code/zunkasite/dist;
       }
 
       location /bower_components/ {
-        root /home/douglasmg7/code/zunka;
+        root /home/douglasmg7/code/zunkasite;
         autoindex on;
       }
     }
