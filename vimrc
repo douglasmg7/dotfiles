@@ -27,6 +27,7 @@ Plugin 'terryma/vim-multiple-cursors' " true sublime text style multiple selecti
 Plugin 'bling/vim-bufferline' " Super simple vim plugin to show the list of buffers in the command bar
 " Plugin 'lifepillar/vim-solarized8'
 Plugin 'fatih/vim-go' " Go development plugin for Vim
+Plugin 'rust-lang/rust.vim' " Vim configuration for Rust.
 " Plugin 'gisraptor/vim-lilypond-integrator'  " Vim Lilypond Integrator.
 Plugin 'valloric/youcompleteme'   " A code-completion engine for Vim.
 " Plugin 'altercation/vim-colors-solarized'   " Precision colorscheme for the vim text editor.
@@ -179,6 +180,10 @@ au filetype go map <leader>r :w <bar> !go run %<cr>
 " au BufRead *.go inoremap { {<cr>}<esc>ko
 " autocmd filetype go inoremap { {<cr>}<esc>ko
 " autocmd filetype go inoremap ( ()<esc>i
+
+" rust
+" Format on save.
+let g:rustfmt_autosave = 1
 
 " example of autocmd
 autocmd filetype javascript iabbrev <buffer>cl console.log(
