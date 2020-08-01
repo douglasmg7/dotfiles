@@ -44,6 +44,11 @@ filetype plugin on    " required by vundle - end vundle
 syntax enable
 set background=dark
 colorscheme ir_black
+" hi SpellCap ctermfg=000 ctermbg=000 guifg=#af0000 guibg=#af0000
+" hi SpellBad ctermfg=000 ctermbg=000 guifg=#af0000 guibg=#af0000
+" hi SpellCap ctermbg=236
+hi SpellCap ctermbg=099
+hi SpellBad ctermbg=088
 
 " colorscheme gruvbox
 " let g:gruvbox_contrast_light='hard'
