@@ -8,7 +8,7 @@ Plugin 'gmarik/Vundle.vim'  " let Vundle manage Vundle, required
 " Plugin 'kchmck/vim-coffee-script' " syntax, ident, compile and more for coffee-script
 Plugin 'easymotion/vim-easymotion' " vim motions on speed
 Plugin 'moll/vim-node' " node tools
-" Plugin 'vim-scripts/ScrollColors'
+Plugin 'vim-scripts/ScrollColors'
 " Plugin 'tpope/vim-fugitive' " git wrapper
 Plugin 'scrooloose/nerdtree' " A tree explorer plugin for vim
 Plugin 'tpope/vim-surround' " Quoting/parenthesizing made simple
@@ -19,8 +19,14 @@ Plugin 'posva/vim-vue' " syntax highligth for vue.js components
 Plugin 'wavded/vim-stylus' " syntax highligth for stylus
 " Plugin 'scrooloose/syntastic' " syntax check (linter)
 Plugin 'pangloss/vim-javascript' " syntax highlighting and improved indentation for java script
-Plugin 'twerth/ir_black' " colorscheme
-" Plugin 'morhetz/gruvbox' " colorscheme
+
+" Colorschemes.
+Plugin 'twerth/ir_black'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'morhetz/gruvbox'
+Plugin 'nanotech/jellybeans.vim' 
+Plugin 'tomasr/molokai'
+
 Plugin 'terryma/vim-multiple-cursors' " true sublime text style multiple selections for vim
 " Plugin 'sirver/ultisnips' " snippet engine
 " Plugin 'honza/vim-snippets' " snippets
@@ -30,7 +36,6 @@ Plugin 'fatih/vim-go' " Go development plugin for Vim
 Plugin 'rust-lang/rust.vim' " Vim configuration for Rust.
 " Plugin 'gisraptor/vim-lilypond-integrator'  " Vim Lilypond Integrator.
 Plugin 'valloric/youcompleteme'   " A code-completion engine for Vim.
-" Plugin 'altercation/vim-colors-solarized'   " Precision colorscheme for the vim text editor.
 " Plugin 'kshenoy/vim-signature'    " Place, toggle and display marks.
 Plugin 'mattn/emmet-vim'	"Emmet for vim.
 
@@ -42,13 +47,25 @@ filetype plugin on    " required by vundle - end vundle
 " set backspace=indent,eol,start
 
 syntax enable
-set background=dark
-colorscheme ir_black
-" hi SpellCap ctermfg=000 ctermbg=000 guifg=#af0000 guibg=#af0000
-" hi SpellBad ctermfg=000 ctermbg=000 guifg=#af0000 guibg=#af0000
-" hi SpellCap ctermbg=236
-hi SpellCap ctermbg=099
-hi SpellBad ctermbg=088
+" set termguicolors
+
+" set background=dark
+" colorscheme ir_black
+" " hi SpellCap ctermfg=000 ctermbg=000 guifg=#af0000 guibg=#af0000
+" " hi SpellBad ctermfg=000 ctermbg=000 guifg=#af0000 guibg=#af0000
+" " hi SpellCap ctermbg=236
+" hi SpellCap ctermbg=099
+" hi SpellBad ctermbg=088
+
+set background=light
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+colorscheme solarized
+
+" set background=dark
+" colorscheme gruvbox
+
 
 " colorscheme gruvbox
 " let g:gruvbox_contrast_light='hard'
