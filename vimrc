@@ -37,7 +37,8 @@ Plugin 'rust-lang/rust.vim' " Vim configuration for Rust.
 " Plugin 'gisraptor/vim-lilypond-integrator'  " Vim Lilypond Integrator.
 Plugin 'valloric/youcompleteme'   " A code-completion engine for Vim.
 " Plugin 'kshenoy/vim-signature'    " Place, toggle and display marks.
-Plugin 'mattn/emmet-vim'	"Emmet for vim.
+Plugin 'mattn/emmet-vim'	" Emmet for vim.
+Plugin 'majutsushi/tagbar'  " Dispaly tags in a window.
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -47,7 +48,7 @@ filetype plugin on    " required by vundle - end vundle
 " set backspace=indent,eol,start
 
 syntax enable
-" set termguicolors
+set termguicolors
 
 " set background=dark
 " colorscheme ir_black
@@ -57,21 +58,21 @@ syntax enable
 " hi SpellCap ctermbg=099
 " hi SpellBad ctermbg=088
 
-set background=light
-let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
-colorscheme solarized
+" set background=light
+" let g:solarized_termcolors=256
+" let g:solarized_contrast="high"
+" let g:solarized_visibility="high"
+" colorscheme solarized
 
 " set background=dark
 " colorscheme gruvbox
 
+set background=light
+let g:gruvbox_contrast_light='hard'
+colorscheme gruvbox
 
-" colorscheme gruvbox
-" let g:gruvbox_contrast_light='hard'
-
-set guioptions-=m		"remove menu bar
-set guioptions-=T		"remove toolbar
+" set guioptions-=m		"remove menu bar
+" set guioptions-=T		"remove toolbar
 set guioptions-=r		"remove right-hand scroll bar
 set guioptions-=L		"remove left-hand scroll bar
 
@@ -81,7 +82,7 @@ set softtabstop=4       "control how many columns vim uses when you hit <tab>
 " set expandtab			"hitting tab will produce spaces
 " set noexpandtab		"hitting tab will not produce spaces
 set number				"show line number
-set numberwidth=3		"line number width
+set numberwidth=4		"line number width
 
 set nowrap				"no wrap
 
@@ -89,7 +90,7 @@ set nowrap				"no wrap
 "set columns=90			"window width - external monitor
 "set columns=77			"window width - laptop
 
-set ignorecase			"ignore case in search
+" set ignorecase			"ignore case in search
 set smartcase			"no ignore case if has some upper case letter
 set autoindent
 set smartindent
@@ -106,7 +107,8 @@ set binary
 " Status bar format.
 " set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L] 
 " set laststatus=2  " always show statusline
-set laststatus=1
+" set laststatus=1
+set laststatus=2
 
 " let mapleader="\<space>"
 let mapleader="-"
@@ -132,6 +134,9 @@ let g:ctrlp_custom_ignore = { 'dir': 'vendor' }
 " nerd tree
 nnoremap <f5> :NERDTreeToggle<cr>
 
+" TagBar 
+nnoremap <F8> :TagbarToggle<cr>
+
 " syntastic
 let g:syntastic_javascript_checkers = ['eslint']
 " let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
@@ -156,9 +161,9 @@ nnoremap <left> <nop>
 nnoremap <right> <nop>
 
 " disable backspace
-inoremap <bs> <nop>
+" inoremap <bs> <nop>
 " disable del
-inoremap <del> <nop>
+" inoremap <del> <nop>
 
 " move to begin of line
 " nnoremap H 0
@@ -206,6 +211,10 @@ au filetype go map <leader>r :w <bar> !go run %<cr>
 " rust
 " Format on save.
 let g:rustfmt_autosave = 1
+" Save and build.
+au filetype rust map <leader>b :w <bar> !cargo build <cr>
+au filetype rust map <leader>r :w <bar> !cargo run <cr>
+au filetype rust map <leader>t :RustTest <cr>
 
 " example of autocmd
 autocmd filetype javascript iabbrev <buffer>cl console.log(
