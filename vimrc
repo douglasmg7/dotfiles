@@ -90,7 +90,7 @@ set nowrap				"no wrap
 "set columns=90			"window width - external monitor
 "set columns=77			"window width - laptop
 
-" set ignorecase			"ignore case in search
+set ignorecase			"ignore case in search
 set smartcase			"no ignore case if has some upper case letter
 set autoindent
 set smartindent
