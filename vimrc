@@ -67,7 +67,7 @@ set termguicolors
 " set background=dark
 " colorscheme gruvbox
 
-set background=light
+set background=dark
 let g:gruvbox_contrast_light='hard'
 colorscheme gruvbox
 
