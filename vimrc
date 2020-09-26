@@ -84,7 +84,10 @@ set softtabstop=4       "control how many columns vim uses when you hit <tab>
 set number				"show line number
 set numberwidth=4		"line number width
 
-set nowrap				"no wrap
+" set nowrap				"no wrap
+" set wrap
+" set textwidth=20
+set wrap linebreak
 
 "set lines=33			"window height
 "set columns=90			"window width - external monitor
