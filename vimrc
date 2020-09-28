@@ -227,6 +227,7 @@ autocmd filetype javascript set commentstring=#\ %s
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " File type detect.
+au BufNewFile,BufRead *.html set filetype=gohtmltmpl
 au BufNewFile,BufRead *.tmpl set filetype=gohtmltmpl
 au BufNewFile,BufRead *.tpl set filetype=gohtmltmpl
 au BufNewFile,BufRead *.gohtml set filetype=gohtmltmpl
