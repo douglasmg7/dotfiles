@@ -127,6 +127,12 @@ let g:ycm_autoclose_preview_window_after_completion=1
 " set completeopt=longest,menuone
 set completeopt=menuone
 
+" Run python script inside vimrc example, :py3 say_hello()
+py3 << EOF
+def say_hello():
+  print("Sup doc.")
+EOF
+
 " Emmet.
 " let g:user_emmet_leader_key=','
 
