@@ -64,9 +64,6 @@ set termguicolors
 " let g:solarized_visibility="high"
 " colorscheme solarized
 
-" set background=dark
-" colorscheme gruvbox
-
 set background=dark
 let g:gruvbox_contrast_light='hard'
 colorscheme gruvbox
