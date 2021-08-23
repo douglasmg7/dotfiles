@@ -27,10 +27,9 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "st",       NULL,       NULL,       0,            0,           0 },
-	{ "sublime",  NULL,       NULL,       1 << 1,       0,           0 },
-	{ "firefox",  NULL,       NULL,       1 << 2,       0,           1 },
+  	{ "st",       NULL,       NULL,       0,            0,           0 },
 	{ "Chromium",  NULL,      NULL,       1 << 3,       0,           1 },
+
 };
 
 /* layout(s) */
@@ -99,7 +98,7 @@ static Key keys[] = {
 };
 
 /* button definitions */
-/* click can be ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
+/* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
