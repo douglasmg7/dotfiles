@@ -27,9 +27,12 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-  	{ "st",       NULL,       NULL,       0,            0,           0 },
-	{ "Chromium",  NULL,      NULL,       1 << 3,       0,           1 },
-
+  	{ "st",             NULL,       NULL,       0,            0,           0 },
+    { "Velocidrone",    NULL,       NULL,       1 << 4,       0,           1 },
+    { "FreeCAD",        NULL,       NULL,       1 << 5,       0,           1 },
+    { "Blender",        NULL,       NULL,       1 << 6,       0,           1 },
+    { "Chromium",       NULL,       NULL,       1 << 7,       0,           1 },
+    { "firefox",        NULL,       NULL,       1 << 8,       0,           1 },
 };
 
 /* layout(s) */
