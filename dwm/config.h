@@ -27,16 +27,19 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "st",       NULL,       NULL,       0,            0,           0 },
-	{ "sublime",  NULL,       NULL,       1 << 1,       0,           0 },
-	{ "firefox",  NULL,       NULL,       1 << 2,       0,           1 },
-	{ "Chromium",  NULL,      NULL,       1 << 3,       0,           1 },
+  	{ "st",             NULL,       NULL,       0,            0,           0 },
+    { "Velocidrone",    NULL,       NULL,       1 << 4,       0,           1 },
+    { "FreeCAD",        NULL,       NULL,       1 << 5,       0,           1 },
+    { "Blender",        NULL,       NULL,       1 << 6,       0,           1 },
+    { "Chromium",       NULL,       NULL,       1 << 7,       0,           1 },
+    { "firefox",        NULL,       NULL,       1 << 8,       0,           1 },
 };
 
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
@@ -99,7 +102,7 @@ static Key keys[] = {
 };
 
 /* button definitions */
-/* click can be ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
+/* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
