@@ -31,20 +31,42 @@ xrandr --output HDMI-0 --auto --left-of DP-2
 
 # start some nice programs
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
- for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
-  [ -x "$f" ] && . "$f"
- done
- unset f
+    for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+        [ -x "$f" ] && . "$f"
+    done
+    unset f
 fi
+
+# # Status bar.
+# while true
+# do
+# LOCALTIME=$(date "+%H:%M")
+# WIFI=$(iw dev wlp7s0 link | grep SSID | cut -c8-)
+# xsetroot -name " $WIFI - $LOCALTIME"
+# sleep 20s
+# done &
 
 # Status bar.
 while true
 do
-  LOCALTIME=$(date "+%H:%M")
-  WIFI=$(iw dev wlp7s0 link | grep SSID | cut -c8-)
-  xsetroot -name " $WIFI - $LOCALTIME"
-  sleep 20s
-done &
+    LOCALTIME=$(date "+%H:%M")
+    # Have a wifi connection.
+    WIFI=$(iw dev wlp7s0 link | grep SSID | cut -c8-)
+    if [ ! -z "$WIFI" ]; then
+        xsetroot -name " $WIFI - $LOCALTIME"
+    else
+        # Have a wired connection.
+        WIRED=$(ip a | grep enp5s0 | grep LOWER_UP)
+        if [ ! -z "$WIRED" ]; then
+            xsetroot -name " Wired - $LOCALTIME"
+        # No wired connection.
+        else
+            xsetroot -name " $LOCALTIME"
+        fi
+    fi
+    sleep 20s
+    done &
+
 # Right alt to accentuation.
 # setxkbmap -option compose:ralt &
 # No composition ralt.
