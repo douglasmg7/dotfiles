@@ -76,3 +76,6 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 
 # # https://github.com/inishchith/autoenv
 # source /home/douglasmg7/.autoenv/activate.sh
+
+# asdf
+. /opt/asdf-vm/asdf.sh
