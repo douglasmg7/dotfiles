@@ -19,7 +19,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -27,12 +27,12 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-  	{ "st",             NULL,       NULL,       0,            0,           0 },
-    { "Velocidrone",    NULL,       NULL,       1 << 4,       0,           1 },
-    { "FreeCAD",        NULL,       NULL,       1 << 5,       0,           1 },
-    { "Blender",        NULL,       NULL,       1 << 6,       0,           1 },
-    { "Chromium",       NULL,       NULL,       1 << 7,       0,           1 },
-    { "firefox",        NULL,       NULL,       1 << 8,       0,           1 },
+      { "_st",             NULL,       NULL,       0,            0,           0 },
+    // { "Velocidrone",    NULL,       NULL,       1 << 4,       0,           1 },
+    // { "FreeCAD",        NULL,       NULL,       1 << 5,       0,           1 },
+    // { "Blender",        NULL,       NULL,       1 << 6,       0,           1 },
+    // { "Chromium",       NULL,       NULL,       1 << 7,       0,           1 },
+    // { "firefox",        NULL,       NULL,       1 << 8,       0,           1 },
 };
 
 /* layout(s) */
