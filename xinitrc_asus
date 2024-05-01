@@ -52,7 +52,7 @@ while true
 do
     LOCALTIME=$(date "+%H:%M")
     # Have a wifi connection.
-    WIFI=$(iw dev wlp7s0 link | grep SSID | cut -c8-)
+    WIFI=$(iw dev wlo1 link | grep SSID | cut -c8-)
     if [ ! -z "$WIFI" ]; then
         xsetroot -name " $WIFI - $LOCALTIME"
     else
