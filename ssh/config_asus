@@ -1,3 +1,3 @@
 Host *
     AddKeysToAgent yes
-    IdentityFile ~/.ssh/citrus_id_ed25519
+    IdentityFile ~/.ssh/id_ed25519
