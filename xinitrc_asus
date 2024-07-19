@@ -50,19 +50,20 @@ fi
 # Status bar.
 while true
 do
+    BATTERY=$(acpi -i | head -1 | cut -f2 -d,)
     LOCALTIME=$(date "+%H:%M")
     # Have a wifi connection.
     WIFI=$(iw dev wlo1 link | grep SSID | cut -c8-)
     if [ ! -z "$WIFI" ]; then
-        xsetroot -name " $WIFI - $LOCALTIME"
+        xsetroot -name "$BATTERY - $WIFI - $LOCALTIME"
     else
         # Have a wired connection.
         WIRED=$(ip a | grep enp5s0 | grep LOWER_UP)
         if [ ! -z "$WIRED" ]; then
-            xsetroot -name " Wired - $LOCALTIME"
+            xsetroot -name "$BATTERY - Wired - $LOCALTIME"
         # No wired connection.
         else
-            xsetroot -name " $LOCALTIME"
+            xsetroot -name "$BATTERY - $LOCALTIME"
         fi
     fi
     sleep 20s
