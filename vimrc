@@ -26,6 +26,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'morhetz/gruvbox'
 Plugin 'nanotech/jellybeans.vim' 
 Plugin 'tomasr/molokai'
+Plugin 'tomasiser/vim-code-dark'
 
 Plugin 'terryma/vim-multiple-cursors' " true sublime text style multiple selections for vim
 " Plugin 'sirver/ultisnips' " snippet engine
