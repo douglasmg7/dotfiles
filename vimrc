@@ -239,3 +239,25 @@ au BufNewFile,BufRead *.bundle set filetype=javascript
 
 " At end, because some thing is reseting.
 set expandtab			"hitting tab will produce spaces
+
+nmap à `a
+nmap Á 'A
+nmap À `A
+nmap ç 'c
+nmap Ç 'C
+nmap é 'e
+nmap è `e
+nmap É 'E
+nmap È `E
+nmap í 'i
+nmap ì `i
+nmap Í 'I
+nmap Ì `I
+nmap ó 'o
+nmap ò `o
+nmap Ó 'O
+nmap Ò `O
+nmap ú 'u
+nmap ù `u
+nmap Ú 'U
+nmap Ù `U
