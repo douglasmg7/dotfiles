@@ -28,7 +28,8 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 # export GOPATH=$HOME/code/golang
 # export PATH=$PATH:$GOPATH/bin
 # Dmg golang src.
-# export GS=$GOPATH/src/github.com/dmg
+# export GS=$GOPATH/src/github.com/douglasmg7
+
 # Zunka.
 # export ZUNKAPATH=~/.local/share/zunka
 # export ZUNKA_SRV_DB=zunkasrv.db
@@ -38,14 +39,14 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/dmg/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/douglasmg7/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/dmg/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/dmg/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/douglasmg7/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/douglasmg7/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/dmg/miniconda3/bin:$PATH"
+        export PATH="/home/douglasmg7/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
