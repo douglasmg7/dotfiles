@@ -198,7 +198,8 @@ nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 " buffer next/previous/delete
 nnoremap gn :bnext<cr>
 nnoremap gp :bprevious<cr>
-nnoremap <C-d> :bd<cr>
+nnoremap <Leader>d :bd<cr>
+nnoremap <C-d> :bp<CR> :bd #<CR>
 
 " remove line into insert mode
 inoremap <C-d> <esc>ddi
