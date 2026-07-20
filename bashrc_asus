@@ -29,6 +29,7 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 # export PATH=$PATH:$GOPATH/bin
 # Dmg golang src.
 # export GS=$GOPATH/src/github.com/douglasmg7
+export PATH=$PATH:~/go/bin
 
 # Zunka.
 # export ZUNKAPATH=~/.local/share/zunka
