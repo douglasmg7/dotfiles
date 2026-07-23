@@ -7,8 +7,8 @@ HISTSIZE=5000
 # Store bash history immediately.
 # PROMPT_COMMAND=$PROMPT_COMMAND;history -a
 # Eliminate duplicates across the whole history.
-export HISTCONTROL=ignoreboth:erasedups   # no duplicate entries
-shopt -s histappend                       # append history file
+export HISTCONTROL=ignoreboth:erasedups # no duplicate entries
+shopt -s histappend                     # append history file
 export PROMPT_COMMAND="history -a"
 
 # If not running interactively, don't do anything
@@ -16,6 +16,15 @@ export PROMPT_COMMAND="history -a"
 
 alias ls='ls --color=auto'
 alias l='ls -la'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias cdl='cdl() { cd "$1" && ls; }; cdl'
+alias mkcd='mkcd_alias() { mkdir -p "$1" && cd "$1"; }; mkcd_alias'
+alias nvima='NVIM_APPNAME="nvim-astronvim" nvim'
+alias nvimk='NVIM_APPNAME="nvim-kickstart" nvim'
+alias nviml='NVIM_APPNAME="nvim-lazyvim" nvim'
+alias nvimc='NVIM_APPNAME="nvim-nvchad" nvim'
 
 PS1='\[\e[32m\]\u@\h\[\e[m\]:\[\e[34m\]\w\$\[\e[m\] '
 # PS1='\u@\h \W\$ '
@@ -36,19 +45,20 @@ export PATH=$PATH:~/go/bin
 # export ZUNKA_SRV_DB=zunkasrv.db
 # export ZUNKA_ALDOWSC_DB=aldowsc.db
 
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+export N_PREFIX="$HOME/n"
+[[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin" # Added by n-install (see http://git.io/n-install-repo).
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/douglasmg7/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/douglasmg7/miniconda3/bin/conda' 'shell.bash' 'hook' 2>/dev/null)"
 if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
+  eval "$__conda_setup"
 else
-    if [ -f "/home/douglasmg7/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/douglasmg7/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/douglasmg7/miniconda3/bin:$PATH"
-    fi
+  if [ -f "/home/douglasmg7/miniconda3/etc/profile.d/conda.sh" ]; then
+    . "/home/douglasmg7/miniconda3/etc/profile.d/conda.sh"
+  else
+    export PATH="/home/douglasmg7/miniconda3/bin:$PATH"
+  fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
