@@ -1,6 +1,8 @@
-#
 # ~/.bashrc
 #
+
+# Enable alias expansion for non-interactive scripts
+shopt -s expand_aliases
 
 # History.
 HISTSIZE=5000
@@ -66,3 +68,12 @@ unset __conda_setup
 
 # For Claude bin
 export PATH=$PATH:~/.local/bin
+
+# Define editor used by yazi
+export EDITOR="env NVIM_APPNAME=nvim-nvchad nvim"
+
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
+
+# zoxide setup
+eval "$(zoxide init bash)"
