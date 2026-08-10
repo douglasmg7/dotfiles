@@ -27,6 +27,7 @@ alias nvima='NVIM_APPNAME="nvim-astronvim" nvim'
 alias nvimk='NVIM_APPNAME="nvim-kickstart" nvim'
 alias nviml='NVIM_APPNAME="nvim-lazyvim" nvim'
 alias nvimc='NVIM_APPNAME="nvim-nvchad" nvim'
+alias v='nvimc'
 
 PS1='\[\e[32m\]\u@\h\[\e[m\]:\[\e[34m\]\w\$\[\e[m\] '
 # PS1='\u@\h \W\$ '
