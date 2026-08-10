@@ -113,9 +113,19 @@ setopt complete_in_word # Allow completion from within a word/phrase.
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias l="ls --color=auto -l"
 alias ls="ls --color=auto"
+alias ls='ls --color=auto'
+alias l='ls -la'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias cdl='cdl() { cd "$1" && ls; }; cdl'
+alias mkcd='mkcd_alias() { mkdir -p "$1" && cd "$1"; }; mkcd_alias'
+alias nvima='NVIM_APPNAME="nvim-astronvim" nvim'
+alias nvimk='NVIM_APPNAME="nvim-kickstart" nvim'
+alias nviml='NVIM_APPNAME="nvim-lazyvim" nvim'
+alias nvimc='NVIM_APPNAME="nvim-nvchad" nvim'
 
 # Default editor (to use sudoedit).
-export EDITOR=vim
+export EDITOR=nvim
 bindkey -e  # Restore key bind to emacs, because the command befor set it to vim.
 
 # ssh-agent unit use this var.
