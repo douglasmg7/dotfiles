@@ -79,3 +79,5 @@ eval "$(fzf --bash)"
 
 # zoxide setup
 eval "$(zoxide init bash)"
+eval "$(uv generate-shell-completion bash)"
+eval "$(uvx --generate-shell-completion bash)"
