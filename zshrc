@@ -139,3 +139,7 @@ HISTFILE="$HOME/.zsh_history"
 export GOPATH="$HOME/code/golang"
 
 
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/douglasmg7/.local/bin:$PATH"

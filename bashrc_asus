@@ -81,3 +81,7 @@ eval "$(fzf --bash)"
 eval "$(zoxide init bash)"
 eval "$(uv generate-shell-completion bash)"
 eval "$(uvx --generate-shell-completion bash)"
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/douglasmg7/.local/bin:$PATH"
